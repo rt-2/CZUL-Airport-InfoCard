@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -16,5 +17,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include=".gitignore" />
+    <Compile Include="AirportCard\includes\definitions.inc.php" />
+    <Compile Include="AirportCard\index.php" />
+    <Compile Include="AirportCard\resources\airports.lib.inc.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AirportCard\" />
+    <Folder Include="AirportCard\assets\css\" />
+    <Folder Include="AirportCard\includes\" />
+    <Folder Include="AirportCard\assets\" />
+    <Folder Include="AirportCard\resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AirportCard\assets\css\base.css" />
+    <Content Include="AirportCard\resources\airports.lib.data.csv" />
   </ItemGroup>
 </Project>
